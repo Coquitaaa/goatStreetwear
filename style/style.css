@@ -1,0 +1,342 @@
+/* 
+Fonts
+
+MONTSERRAT:
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+} */
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+/* Bodys estilos */
+
+.mainBody {
+    background-image: url(../assets/img/mainImage.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    margin: 0%;
+}
+
+.newArrivalBody {
+    background-image: url(../assets/img/newArrivalsImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.localesBody {
+    background-image: url(../assets/img/localesImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Bodys estilos */
+
+.mainLogoGoatStreetwearContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.mainLogoGoatStreetwear {
+    height: auto;
+    width: 35%;
+}
+
+header .miniLogo img {
+    padding-top: 0.7rem;
+    height: 3.5rem;
+    width: auto;
+    cursor: pointer;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem;
+    padding: 3rem 2rem;
+}
+
+header .cartIcon {
+    cursor: pointer;
+    transition: all 100ms;
+}
+
+header .cartIcon:hover {
+    transform: scale(1.2);
+    color: gold;
+}
+
+.searchIcon {
+    padding-left: 1rem;
+}
+
+header a img {
+    padding-left: 1rem;
+    align-items: center;
+}
+
+header .navLinks {
+    list-style: none;
+}
+
+header .navLinks li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.navLinks a {
+    font-weight: 600;
+    color: white;
+}
+
+header .navLinks li:hover {
+    transform: scale(1.2);
+    
+}
+
+header .navLinks li {
+    transition: all 100ms;
+}
+
+header .navLinks li a:hover {
+    color: gold;
+}
+
+header .navLinks li {
+    transition: all 100ms;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.cardImage:hover {
+    cursor: pointer;
+}
+
+.cardTitle:hover {
+    cursor: pointer;
+}
+
+.cardTitle {
+    padding: 0.75rem 0% 0.5rem 0%;
+    color: white;
+    
+}
+
+.cardDescription {
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+header .searchIcon:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+
+header .searchIcon {
+    transition: all 100ms;
+}
+
+header .icons a img:hover {
+    color: gold;
+}
+
+.cards { 
+    display: flex;
+    align-items: center;
+}
+
+.cardImage {
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 30px black;
+}
+
+h1 {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newArrivalTitleContainer h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.newArrivalpage .cards {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.newArrival {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    color: gold;
+    font-weight: 500;
+}
+
+.price {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 1.25rem;
+}
+
+.localesPage h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.localesSubTitle {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.localesSubTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flechaHaciaAbajoContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+}
+
+.locales {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.local .localInfo {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.sobreNosotrosArticle {
+    width: 100%;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.sobreNosotrosArticle section {
+    padding-bottom: 3rem;
+    width: 700px;
+    color: white;
+}
+
+.sobreNosotrosArticle section h2 {
+    color: gold;
+    padding: 2rem 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sobreNosotrosArticle section p {
+    font-weight: 400;
+}
+
+.cartTitle {
+    color: white;
+    padding-top: 15rem;
+    padding-left: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.cartProducts {
+    color: white;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    border-bottom: 2px solid rgb(107, 107, 107);
+}
+
+.cartProducts p {
+    padding-top: 5rem;
+    color: rgb(163, 163, 163);
+}
+
+.cartPrice {
+    margin: 2rem 0 0 3.5rem;
+    color: white;
+}
+
+.cartPrice section {
+    padding-bottom: 3rem;
+}
+
+.divSubTotal {
+    padding-bottom: 1rem;
+}
+
+.cartPrice p {
+    padding-bottom: .5rem;
+}
