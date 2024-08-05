@@ -24,11 +24,11 @@ font-style: normal;
     text-decoration: none;
 }
 
+/* Bodys estilos */
+
 body {
     background-color: rgb(27, 27, 27);
 }
-
-/* Bodys estilos */
 
 .mainBody {
     background-image: url(../assets/img/mainImage.jpg);
@@ -81,16 +81,17 @@ header {
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 5.5rem;
-    padding: 3rem 2rem;
+    height: rem;
+    padding: 2rem 2rem;
 }
 
-header .cartIcon {
+header .cartIconLink .cartIcon {
     cursor: pointer;
     transition: all 100ms;
+    color: white;
 }
 
-header .cartIcon:hover {
+header div a img:hover {
     transform: scale(1.2);
     color: gold;
 }
@@ -111,6 +112,7 @@ header .navLinks {
 header .navLinks li {
     display: inline-block;
     padding: 0 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .navLinks a {
@@ -136,16 +138,20 @@ header .navLinks li {
 }
 
 .cards {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px;
     align-items: center;
+    justify-items: center;
     justify-content: center;
+    gap: 80px;
 }
 
 .card {
-    width: auto;
+    padding-bottom: 2rem;
+    width: 300px;
     height: auto;
-    padding: 0.5rem;
-    margin: 1rem;
+    object-fit: contain;
 }
 
 .cardImage:hover {
@@ -180,13 +186,8 @@ header .icons a img:hover {
     color: gold;
 }
 
-.cards { 
-    display: flex;
-    align-items: center;
-}
-
 .cardImage {
-    width: 400px;
+    width: 300px;
     height: auto;
     box-shadow: 0px 0px 30px black;
 }
@@ -197,18 +198,13 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .newArrivalTitleContainer h1 {
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 100px;
-}
-
-.newArrivalpage .cards {
-    display: flex;
-    width: auto;
-    height: auto;
 }
 
 .newArrival {
@@ -229,6 +225,7 @@ h1 {
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 100px;
+    justify-content: center;
 }
 
 .localesSubTitle {
@@ -283,11 +280,12 @@ h1 {
     align-items: center;
     flex-direction: column;
     height: auto;
+    flex-wrap: wrap;
 }
 
 .sobreNosotrosArticle section {
     padding-bottom: 3rem;
-    width: 700px;
+    width: 70%;
     color: white;
 }
 
@@ -300,6 +298,7 @@ h1 {
 
 .sobreNosotrosArticle section p {
     font-weight: 400;
+    height: auto;
 }
 
 .cartTitle {
@@ -339,4 +338,107 @@ h1 {
 
 .cartPrice p {
     padding-bottom: .5rem;
+}
+
+/* media queries */
+
+@media (min-width:750px) {
+    .cards {
+    grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media (min-width:1150px) {
+    .cards {
+    grid-template-columns: repeat(3, 300px);
+    }
+}
+
+@media (min-width:1500px) {
+    .cards {
+    grid-template-columns: repeat(4, 300px);
+    }
+}
+
+
+@media (max-width:900px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .mainLogoGoatStreetwearContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    .mainLogoGoatStreetwear {
+        height: auto;
+        width: 300px;
+    }
+
+    .localesPage h1 {
+        font-size: 90px;
+    }
+
+    .newArrivalsPage h1 {
+        font-size: 75px;
+    }
+
+    .localesPage h2 {
+        font-size: 15px;
+    }
+
+    .localesPage h3 {
+        font-size: 30px;
+    }
+
+    .localesPage p {
+        font-size: 15px;
+    }
+
+    .local {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .localMap img {
+        width: 350px;
+        justify-self: center;
+    }
+}
+
+@media (max-width:655px) {
+    .localesPage h1 {
+        font-size: 60px;
+    }
+    .newArrivalsPage h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:450px) {
+    .card {
+        width: 300px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media (max-width:365px) {
+    .localMap img {
+        width: 250px;
+    }
 }

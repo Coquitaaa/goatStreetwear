@@ -1,9 +1,0 @@
-Preentrega
-
-1. Figame, generado wireframe de la idea de la pagina web.
-5 paginas con sus vistas en desktop, tablet y mobile
-
---------
-Codigo
-
-5 htmls totalmente enlazados, y semánticamente maquetados
