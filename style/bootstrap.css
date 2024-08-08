@@ -1,0 +1,16 @@
+header a {
+    height: fit-content;
+}
+
+.miniLogoGoatStreetwear {
+    width: 150px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    width: fit-content;
+}
