@@ -1,0 +1,62 @@
+/*Fonts
+
+MONTSERRAT:
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+} */
+
+// utilities
+@import "./utilities/variables";
+@import "./utilities/funciones";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+//base
+@import "./base/reset";
+@import "./base/fonts";
+
+//layout
+@import "./layout/header";
+@import "./layout/mainPage";
+@import "./layout/newArrivalsPage";
+@import "./layout/localesPage";
+@import "./layout/nosotrosPage";
+@import "./layout/carritoPage";
+
+//components
+@import "components/bootstrap";
+@import "components/card";
+
+//mediaquerys
+//grid
+@import "layout/media/min750";
+@import "layout/media/min1150";
+@import "layout/media/min1500";
+//demas
+@import "layout/media/max900";
+@import "layout/media/max655";
+@import "layout/media/max450";
+@import "layout/media/max365";
+
+
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+h1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*# sourceMappingURL=style.scss.map */

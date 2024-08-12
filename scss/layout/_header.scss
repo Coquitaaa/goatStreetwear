@@ -1,0 +1,82 @@
+header {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: rem;
+    padding: 1rem 1rem;
+}
+
+header .miniLogo img {
+    padding-top: 0.7rem;
+    height: 3.5rem;
+    width: auto;
+    cursor: pointer;
+}
+
+header .cartIconLink .cartIcon {
+    cursor: pointer;
+    transition: all 100ms;
+    color: white;
+}
+
+header div a img:hover {
+    transform: scale(1.2);
+    color: gold;
+}
+
+.searchIcon {
+    padding-left: 1rem;
+}
+
+header a img {
+    padding-left: 1rem;
+    align-items: center;
+}
+
+header .navLinks {
+    list-style: none;
+}
+
+header .navLinks li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.navLinks a {
+    font-weight: 600;
+    color: white;
+}
+
+header .navLinks li:hover {
+    transform: scale(1.2);
+    
+}
+
+header .navLinks li {
+    transition: all 100ms;
+}
+
+header .navLinks li a:hover {
+    color: gold;
+}
+
+header .navLinks li {
+    transition: all 100ms;
+}
+
+header .searchIcon:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+
+header .searchIcon {
+    transition: all 100ms;
+}
+
+header .icons a img:hover {
+    color: gold;
+}

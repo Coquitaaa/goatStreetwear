@@ -1,0 +1,5 @@
+@media (min-width:1500px) {
+    .cards {
+    grid-template-columns: repeat(4, 300px);
+    }
+}

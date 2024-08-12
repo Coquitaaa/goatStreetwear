@@ -1,0 +1,28 @@
+.sobreNosotrosArticle {
+    width: 100%;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.sobreNosotrosArticle section {
+    padding-bottom: 3rem;
+    width: 70%;
+    color: white;
+}
+
+.sobreNosotrosArticle section h2 {
+    color: gold;
+    padding: 2rem 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sobreNosotrosArticle section p {
+    font-weight: 400;
+    height: auto;
+}

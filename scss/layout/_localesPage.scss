@@ -1,0 +1,56 @@
+.localesBody {
+    background-image: url(../assets/img/localesImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.localesPage h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 100px;
+    justify-content: center;
+}
+
+.localesSubTitle {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.localesSubTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flechaHaciaAbajoContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+}
+
+.locales {
+    padding: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.local .localInfo {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem;
+}
