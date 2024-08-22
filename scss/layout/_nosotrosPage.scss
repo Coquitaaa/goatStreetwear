@@ -12,11 +12,11 @@
 .sobreNosotrosArticle section {
     padding-bottom: 3rem;
     width: 70%;
-    color: white;
+    color: map-get($map: $colores, $key:color1);
 }
 
 .sobreNosotrosArticle section h2 {
-    color: gold;
+    color: map-get($map: $colores, $key:color4);
     padding: 2rem 0;
     font-size: 20px;
     font-weight: 600;

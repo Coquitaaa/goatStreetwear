@@ -1,11 +1,8 @@
 header {
+    @include flex (row, wrap, space-evenly, center, none);
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
-    display: flex;
-    flex-direction: row;
     position: fixed;
-    justify-content: space-between;
-    align-items: center;
     height: rem;
     padding: 1rem 1rem;
 }
@@ -20,16 +17,12 @@ header .miniLogo img {
 header .cartIconLink .cartIcon {
     cursor: pointer;
     transition: all 100ms;
-    color: white;
+    color: map-get($map: $colores, $key:color1);
 }
 
 header div a img:hover {
     transform: scale(1.2);
-    color: gold;
-}
-
-.searchIcon {
-    padding-left: 1rem;
+    color: map-get($map: $colores, $key:color4);
 }
 
 header a img {
@@ -39,44 +32,35 @@ header a img {
 
 header .navLinks {
     list-style: none;
+    li {
+        display: inline-block;
+        padding: 0 1.5rem;
+        transition: all 100ms;
+    }
+    a {
+        font-weight: 600;
+        color: map-get($map: $colores, $key:color1);
+    }
 }
 
-header .navLinks li {
-    display: inline-block;
-    padding: 0 1.5rem;
+header .searchIcon {
+    transition: all 100ms;
+    padding-left: 1rem;
 }
-
-.navLinks a {
-    font-weight: 600;
-    color: white;
-}
-
 header .navLinks li:hover {
     transform: scale(1.2);
     
 }
 
-header .navLinks li {
-    transition: all 100ms;
-}
-
 header .navLinks li a:hover {
-    color: gold;
-}
-
-header .navLinks li {
-    transition: all 100ms;
+    color: map-get($map: $colores, $key:color4);
 }
 
 header .searchIcon:hover {
-    color: gold;
+    color: map-get($map: $colores, $key:color4);
     transform: scale(1.2);
 }
 
-header .searchIcon {
-    transition: all 100ms;
-}
-
 header .icons a img:hover {
-    color: gold;
+    color: map-get($map: $colores, $key:color4);
 }

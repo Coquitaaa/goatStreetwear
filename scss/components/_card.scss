@@ -35,12 +35,12 @@
 }
 
 .cardDescription {
-    color: white;
+    color: map-get($map: $colores, $key:color1);
     padding-bottom: 0.5rem;
 }
 
 .price {
-    color: white;
+    color: map-get($map: $colores, $key:color1);
     font-weight: 500;
     font-size: 20px;
     padding-top: 1.25rem;
@@ -49,6 +49,6 @@
 .newArrival {
     padding-top: 1rem;
     padding-bottom: 0;
-    color: gold;
+    color: map-get($map: $colores, $key:color4);
     font-weight: 500;
 } 

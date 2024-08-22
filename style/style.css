@@ -25,13 +25,15 @@ font-style: normal;
 }
 
 header {
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
   display: flex;
   flex-direction: row;
-  position: fixed;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+  gap: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
   height: rem;
   padding: 1rem 1rem;
 }
@@ -54,10 +56,6 @@ header div a img:hover {
   color: gold;
 }
 
-.searchIcon {
-  padding-left: 1rem;
-}
-
 header a img {
   padding-left: 1rem;
   align-items: center;
@@ -66,40 +64,32 @@ header a img {
 header .navLinks {
   list-style: none;
 }
-
 header .navLinks li {
   display: inline-block;
   padding: 0 1.5rem;
+  transition: all 100ms;
 }
-
-.navLinks a {
+header .navLinks a {
   font-weight: 600;
   color: white;
+}
+
+header .searchIcon {
+  transition: all 100ms;
+  padding-left: 1rem;
 }
 
 header .navLinks li:hover {
   transform: scale(1.2);
 }
 
-header .navLinks li {
-  transition: all 100ms;
-}
-
 header .navLinks li a:hover {
   color: gold;
-}
-
-header .navLinks li {
-  transition: all 100ms;
 }
 
 header .searchIcon:hover {
   color: gold;
   transform: scale(1.2);
-}
-
-header .searchIcon {
-  transition: all 100ms;
 }
 
 header .icons a img:hover {
@@ -130,28 +120,6 @@ header .icons a img:hover {
   width: 35%;
 }
 
-.bootstrapLink {
-  width: fit-content;
-  position: fixed;
-  left: 53px;
-  top: 100px;
-  padding: 5px 5px;
-  font-weight: 700;
-  font-size: 12px;
-  text-align: center;
-  color: gold;
-  background-color: black;
-  border-radius: 5px;
-  transition: all 150ms;
-}
-
-.bootstrapLink:hover {
-  cursor: pointer;
-  background-color: gold;
-  color: black;
-  box-shadow: 0px 0px 30px gold;
-}
-
 .newArrivalBody {
   background-image: url(../assets/img/newArrivalsImage.jpg);
   background-repeat: no-repeat;
@@ -159,7 +127,7 @@ header .icons a img:hover {
 }
 
 .newArrivalTitleContainer h1 {
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 700;
   font-size: 100px;
 }
@@ -171,14 +139,14 @@ header .icons a img:hover {
 }
 
 .localesPage h1 {
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 700;
   font-size: 100px;
   justify-content: center;
 }
 
 .localesSubTitle {
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 500;
   font-size: 25px;
 }
@@ -197,13 +165,14 @@ header .icons a img:hover {
 }
 
 .locales {
-  padding: 5rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15rem;
+  align-items: center;
+  gap: 10rem;
+  padding: 5rem;
+  width: 100%;
 }
 
 .local {

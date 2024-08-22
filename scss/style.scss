@@ -47,7 +47,7 @@ font-style: normal;
 
 
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: map-get($map: $colores, $key: color3);
 }
 
 h1 {

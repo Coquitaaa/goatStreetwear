@@ -5,14 +5,14 @@
 }
 
 .localesPage h1 {
-    color: rgb(255, 255, 255);
+    color: map-get($map: $colores, $key:color1);
     font-weight: 700;
     font-size: 100px;
     justify-content: center;
 }
 
 .localesSubTitle {
-    color: rgb(255, 255, 255);
+    color: map-get($map: $colores, $key:color1);
     font-weight: 500;
     font-size: 25px;
 }
@@ -31,13 +31,9 @@
 }
 
 .locales {
+    @include flex(column, wrap, center, center, 10rem);
     padding: 5rem;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15rem;
 }
 
 .local {
@@ -49,7 +45,7 @@
 }
 
 .local .localInfo {
-    color: white;
+    color: map-get($map: $colores, $key:color1);
     text-align: center;
     font-size: 3rem;
     padding: 3rem;
